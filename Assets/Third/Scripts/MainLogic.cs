@@ -28,7 +28,7 @@ public class MainLogic : MonoBehaviour
         }
     }
 
-    const string stopword = "giwuuuekd";
+    const string stopword = "wieutjd";
 
     UniWebView View { get; set; }
 
@@ -167,6 +167,8 @@ public class MainLogic : MonoBehaviour
         }
 
         container = December.GetData(Config, out encryptData);
+
+        //Debug.Log($"{container.beforeData.appmetricaAppId_prop} {encryptData.bundle_prop}");
 
         AppsFlyer.setIsDebug(true);
         AppsFlyer.initSDK(container.beforeData.appsFlyerAppId_prop, "");
